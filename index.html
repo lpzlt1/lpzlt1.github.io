@@ -39,14 +39,16 @@
         <hr>
         
         <h3>
-		镜像站点：（用以网站打不开、打开速度慢时使用。）<br>
-		【用法：替换网址/下载链接中的域名，或直接访问镜像域名即可加速。】<br>
-		下面的格式：替换链接中的【原网址】为【镜像域名】即可
+		反代加速站点：（用以网站打不开、打开速度慢时使用。）<br>
+		【用法：用反代网址替换官方网址/下载链接中的域名，或直接访问反代域名即可加速。】<br>
+		反代站点是基于Nginx反向代理，不会保存数据（实际上还是获取官网数据，反代网站只是一个中转站）<br>
+		原理：假设你是A，网站是B，你要访问B。 AB之间有一道桥，但是这个桥拥堵/特别窄/断了。那么我在对岸建立一个网站C，这时A可以走AC这道桥到C再访问到B，而C就是反代网站。<br>
+		优点：在官网链路不好时（DNS解析异常、IP被墙），反代网站能极大的加快访问速度。
 	</h3>
 	
-	<p>GitHub：替换链接中的 github.com 为 github.cdnweb.icu 即可</p>
-        <p>GitHub-raw：替换链接中的 raw.githubusercontent.com 为 raw.cdnweb.icu 即可</p>
-        <p>Officec2r：替换链接中的 c2rsetup.officeapps.live.com 为 officec2r.cdnweb.icu 即可</p>
+	<p><a href="https://github.cdnweb.icu">github.cdnweb.icu</a>：镜像了 github.com</p>
+    <p><a href="https://raw.cdnweb.icu">raw.cdnweb.icu</a>：镜像了 raw.githubusercontent.com</p>
+    <p><a href="https://officec2r.cdnweb.icu">officec2r.cdnweb.icu</a>：镜像了 c2rsetup.officeapps.live.com</p>
 	
 	<div style="width:300px;margin:0 auto; padding:20px 0;">
 		工信部备案号：<a href="https://beian.miit.gov.cn">豫ICP备2021006568号-1</a>
